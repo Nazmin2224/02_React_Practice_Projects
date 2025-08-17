@@ -1,0 +1,103 @@
+/* Events.css */
+
+.events-page {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+  background-color: rgba(18, 16, 16, 0.5);
+  color: white;
+}
+
+.events-header {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: rgba(18, 16, 16, 0.5);
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.events-header h1 {
+  font-size: 2.5rem;
+  color:white;
+  margin-bottom: 10px;
+}
+
+.events-header p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.events-section {
+  margin-bottom: 40px;
+}
+
+.events-section h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.event-card {
+background-color: rgba(18, 16, 16, 0.5);;
+  border-left: 6px solid rgb(2, 104, 39);
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  font-size: 0.95rem;
+  color: white;
+  margin: 4px 0;
+}
+
+.event-card.upcoming {
+  border-left-color: #04be0e;
+}
+
+.event-card.past {
+  border-left-color: #0e6f12;
+  background-color: rgba(18, 16, 16, 0.5);;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .event-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .event-card {
+    width: 90%;
+  }
+}
+.event-card {
+  background-color: rgba(18, 16, 16, 0.5);
+  border-left: 6px solid #06de11;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.event-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}

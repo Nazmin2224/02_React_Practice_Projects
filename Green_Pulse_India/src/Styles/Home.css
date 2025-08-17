@@ -1,0 +1,131 @@
+/* src/components/Home.css */
+
+/* General body styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #b7efa6; /* Light green background color */
+}
+
+/* Hero Section Styling */
+.hero-section {
+  background: url('../assets/BG-0.jpg') no-repeat center center;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0; /* Padding to adjust vertical spacing */
+}
+
+.hero-section .container {
+  max-width: 800px; /* Keeps content centered and constrained */
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero-section .btn {
+  font-size: 1.1rem;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-section .btn:hover {
+  background-color: #145a32; /* Darker green on hover */
+}
+
+/* Button with move-down class (for animation) */
+.move-down {
+  animation: moveDown 1s ease-in-out infinite alternate;
+}
+
+/* Keyframe animation for button move-down effect */
+@keyframes moveDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+/* Foundation Section */
+.container1 {
+  margin-top: 55px;
+  text-align: center;
+  color: #152902;
+}
+
+.foundation-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2e7d32;
+  margin-bottom: 30px;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2e7d32;
+  margin-top: 30px;
+}
+
+/* Mission Section */
+#mission p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Vision Section */
+#vision ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#vision li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Logo and Video Section */
+.text-center {
+  text-align: center;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto}
+
+  .card-custom-size {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-img-fixed {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}

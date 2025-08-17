@@ -1,0 +1,14 @@
+/* src/components/Footer.css */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure the page content isn't hidden behind the footer */
+main {
+  padding-bottom: 60px; /* Adjust padding based on footer height */
+}
